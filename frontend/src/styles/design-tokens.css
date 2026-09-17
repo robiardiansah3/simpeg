@@ -1,0 +1,204 @@
+/*
+ * =====================================================================
+ * SIMPEG - DESIGN TOKENS (LIGHT MODE ONLY)
+ * Sesuai template: Sidebar dark blue, Content area putih/abu muda
+ * =====================================================================
+ */
+
+/* =====================================================================
+ * LIGHT MODE — selalu aktif, tidak bergantung sistem OS
+ * ===================================================================== */
+:root {
+
+  /* --- WARNA PRIMER --- */
+  --color-primary:        #2e3192;  /* Biru tua sidebar & brand */
+  --color-primary-dark:   #1B2559;  /* Hover sidebar */
+  --color-primary-light:  #4F6DFF;  /* Highlight aktif di sidebar */
+  --color-secondary:      #7C9CFF;
+  --color-info:           #38BDF8;
+
+  /* --- WARNA NETRAL (LIGHT) --- */
+  --color-bg:             #F5F7F9;  /* Latar halaman konten — abu sangat muda */
+  --color-surface:        #FFFFFF;  /* Card, topbar, modal */
+  --color-surface-elevated:#F8FAFC;
+  --color-border:         #E2E8F0;
+  --color-text-primary:   #1E293B;
+  --color-text-secondary: #64748B;
+
+  /* --- STATUS --- */
+  --color-success:        #22C55E;
+  --color-success-bg:     #F0FDF4;
+  --color-success-text:   #15803D;
+  --color-warning:        #F59E0B;
+  --color-warning-bg:     #FFFBEB;
+  --color-warning-text:   #B45309;
+  --color-danger:         #EF4444;
+  --color-danger-bg:      #FEF2F2;
+  --color-danger-text:    #B91C1C;
+
+  /* --- TOMBOL --- */
+  --btn-primary-bg:       #2563EB;  /* Biru royal — tombol utama */
+  --btn-primary-text:     #FFFFFF;
+  --btn-primary-hover:    #1D4ED8;
+
+  --btn-secondary-bg:     transparent;
+  --btn-secondary-text:   #2563EB;
+  --btn-secondary-border: #2563EB;
+  --btn-secondary-hover:  #EFF6FF;
+
+  --btn-outline-bg:       transparent;
+  --btn-outline-text:     #2563EB;
+  --btn-outline-border:   #BFDBFE;
+
+  /* --- SIDEBAR (Dark Blue) --- */
+  --sidebar-bg:           #2E3192;
+  --sidebar-text:         rgba(255,255,255,0.75);
+  --sidebar-active-bg:    rgba(255,255,255,0.12);
+  --sidebar-active-text:  #FFFFFF;
+  --sidebar-hover-bg:     rgba(255,255,255,0.08);
+  --sidebar-icon:         rgba(255,255,255,0.7);
+  --sidebar-icon-active:  #FFFFFF;
+
+  /* --- NAVBAR (putih) --- */
+  --navbar-bg:            #FFFFFF;
+  --navbar-text:          #1E293B;
+  --navbar-border:        #E2E8F0;
+
+  /* --- INPUT --- */
+  --input-bg:             #FFFFFF;
+  --input-border:         #CBD5E1;
+  --input-border-focus:   #2563EB;
+  --input-text:           #1E293B;
+  --input-placeholder:    #94A3B8;
+
+  /* --- BADGE --- */
+  --badge-info-bg:        #EFF6FF;
+  --badge-info-text:      #2563EB;
+  --badge-pengumuman-bg:  #F5F3FF;
+  --badge-pengumuman-text:#7C3AED;
+  --badge-kegiatan-bg:    #ECFDF5;
+  --badge-kegiatan-text:  #059669;
+
+  /* --- SHADOW --- */
+  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md:   0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg:   0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+}
+
+/* Force light mode — override browser/OS dark preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Re-declare semua variabel agar tetap light mode */
+    --color-primary:        #2E3182;
+    --color-primary-dark:   #1B2559;
+    --color-primary-light:  #4F8DFF;
+    --color-secondary:      #7C9CFF;
+    --color-info:           #38BDF8;
+
+    --color-bg:             #F4F6F9;
+    --color-surface:        #FFFFFF;
+    --color-surface-elevated:#F8FAFC;
+    --color-border:         #E2E8F0;
+    --color-text-primary:   #1E293B;
+    --color-text-secondary: #64748B;
+
+    --color-success:        #22C55E;
+    --color-success-bg:     #F0FDF4;
+    --color-success-text:   #15803D;
+    --color-warning:        #F59E0B;
+    --color-warning-bg:     #FFFBEB;
+    --color-warning-text:   #B45309;
+    --color-danger:         #EF4444;
+    --color-danger-bg:      #FEF2F2;
+    --color-danger-text:    #B91C1C;
+
+    --btn-primary-bg:       #2563EB;
+    --btn-primary-text:     #FFFFFF;
+    --btn-primary-hover:    #1D4ED8;
+
+    --btn-secondary-bg:     transparent;
+    --btn-secondary-text:   #2563EB;
+    --btn-secondary-border: #2563EB;
+    --btn-secondary-hover:  #EFF6FF;
+
+    --btn-outline-bg:       transparent;
+    --btn-outline-text:     #2563EB;
+    --btn-outline-border:   #BFDBFE;
+
+    --sidebar-bg:           #2E3192;
+    --sidebar-text:         rgba(255,255,255,0.75);
+    --sidebar-active-bg:    rgba(255,255,255,0.12);
+    --sidebar-active-text:  #FFFFFF;
+    --sidebar-hover-bg:     rgba(255,255,255,0.08);
+    --sidebar-icon:         rgba(255,255,255,0.7);
+    --sidebar-icon-active:  #FFFFFF;
+
+    --navbar-bg:            #FFFFFF;
+    --navbar-text:          #1E293B;
+    --navbar-border:        #E2E8F0;
+
+    --input-bg:             #FFFFFF;
+    --input-border:         #CBD5E1;
+    --input-border-focus:   #2563EB;
+    --input-text:           #1E293B;
+    --input-placeholder:    #94A3B8;
+
+    --badge-info-bg:        #EFF6FF;
+    --badge-info-text:      #2563EB;
+    --badge-pengumuman-bg:  #F5F3FF;
+    --badge-pengumuman-text:#7C3AED;
+    --badge-kegiatan-bg:    #ECFDF5;
+    --badge-kegiatan-text:  #059669;
+
+    --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.06);
+    --shadow-md:   0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+    --shadow-lg:   0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  }
+}
+
+/* =====================================================================
+ * TIPOGRAFI — Poppins (Google Fonts)
+ * ===================================================================== */
+:root {
+  --font-sans:    'Poppins', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:    ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --leading-tight:  1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.75;
+
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-full:9999px;
+
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  --transition-fast:   150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow:   400ms ease;
+}

@@ -1,0 +1,88 @@
+# ==========================================
+# SIMPEG - GITIGNORE
+# ==========================================
+
+
+# ==========================================
+# BACKEND - LARAVEL
+# ==========================================
+
+backend/.phpunit.cache
+backend/node_modules/
+backend/vendor/
+backend/app/Filament/*.zip
+
+# Laravel build/cache
+backend/public/build/
+backend/public/hot
+backend/public/storage
+
+backend/storage/*.key
+backend/storage/pail/
+
+# Environment / private configuration
+backend/.env
+backend/.env.backup
+backend/.env.production
+
+# PHP / Laravel
+backend/.phpactor.json
+backend/.phpunit.result.cache
+backend/Homestead.json
+backend/Homestead.yaml
+backend/auth.json
+
+# Backend logs
+backend/npm-debug.log
+backend/yarn-error.log
+
+# Backend IDE
+backend/.fleet/
+backend/.idea/
+backend/.nova/
+backend/.vscode/
+backend/.zed/
+
+
+# ==========================================
+# FRONTEND - REACT / VITE
+# ==========================================
+
+# Dependencies
+frontend/node_modules/
+
+# Build
+frontend/dist/
+frontend/dist-ssr/
+
+# Environment / private configuration
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+
+# Logs
+frontend/logs/
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+# Other local files
+frontend/*.local
+
+# Frontend IDE
+frontend/.vscode/
+frontend/.idea/
+
+# Operating system
+frontend/.DS_Store
+
+# Visual Studio
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?

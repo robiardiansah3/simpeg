@@ -1,0 +1,35 @@
+/*
+ * =====================================================================
+ * SIMPEG BACKEND - FILAMENT ADMIN THEME TOKENS
+ * File: backend/resources/css/filament-theme.css
+ *
+ * Berisi: Kustomisasi tipografi (Font Poppins)
+ * Warna diatur melalui AdminPanelProvider.php agar tidak merusak template bawaan.
+ * =====================================================================
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --simpeg-font: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --simpeg-weight-semibold: 600;
+}
+
+/* =====================================================================
+ * OVERRIDE FILAMENT - FONT SAJA
+ * Mengganti font default Filament menjadi Poppins, membiarkan layout
+ * dan warna diatur oleh engine Filament bawaan.
+ * ===================================================================== */
+body,
+.fi-body {
+  font-family: var(--simpeg-font) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.fi-header-heading,
+.fi-section-header-heading,
+.fi-resource-header-heading {
+  font-family: var(--simpeg-font) !important;
+  font-weight: var(--simpeg-weight-semibold) !important;
+}
+
